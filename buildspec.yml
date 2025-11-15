@@ -16,7 +16,7 @@ phases:
   post_build:
     commands:
       - echo Deploying SAM application...
-      - sam deploy --stack-name notes-microservice --capabilities CAPABILITY_NAMED_IAM --region us-east-1 --no-confirm-changeset --no-fail-on-empty-changeset --s3-bucket $ARTIFACT_BUCKET --resolve-s3=false
+      - sam deploy --stack-name notes-microservice --capabilities CAPABILITY_NAMED_IAM --region us-east-1 --no-confirm-changeset --no-fail-on-empty-changeset --s3-bucket $ARTIFACT_BUCKET --no-resolve-s3
 artifacts:
   files:
     - "**/*"
