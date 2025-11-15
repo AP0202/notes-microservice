@@ -4,7 +4,7 @@ Description: CI/CD pipeline for deploying a SAM application using CodePipeline a
 Parameters:
   GitHubRepo:
     Type: String
-    Description: GitHub repository in the format owner/repo (e.g., rizmaxed/notes-microservice)
+    Description: GitHub repository in the format owner/repo (e.g., <your github username>/notes-microservice)
   GitHubBranch:
     Type: String
     Default: main
